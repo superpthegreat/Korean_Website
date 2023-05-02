@@ -1,0 +1,110 @@
+    body {
+        font-family: monospace;
+    }
+    
+    ul {
+        /* font of list*/
+        font-family: helvetica;
+    }
+    
+    li {
+        list-style: circle;
+    }
+    
+    .list {
+        list-style: square;
+    }
+    
+    .light-theme {
+        /*--bg: var(--white); */
+        background-color: #A0A0A0;
+        /* for browsers that do not support gradients */
+        background-image: linear-gradient(#A0A0A0, #606060);
+        --fontColor: var(--black);
+        --btnBg: var(--black);
+        --btnFontColor: var(--white);
+        height: 100%;
+    }
+    
+    .dark-theme {
+        background-color: #303030;
+        /* for browsers that do not support gradients */
+        background-image: linear-gradient( #303030, #585858);
+        --fontColor: var(--olives);
+        --btnBg: var(--white);
+        --btnFontColor: var(--olives);
+    }
+    
+     :root {
+        /*list of colors */
+        --green: #00FF00;
+        --white: #ffffff;
+        --black: #000000;
+        --grey: #778899;
+        --red: red;
+        --blue: blue;
+        --olives: #FFC080;
+    }
+    
+    * {
+        color: var(--fontColor);
+        font-family: helvetica;
+    }
+    
+    body {
+        background: var(--bg);
+    }
+    
+    .btn {
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    
+    .btn:focus {
+        outline-style: none;
+    }
+    
+    .highlight {
+        background-color: rgb(255, 217, 0)
+    }
+    
+    .error {
+        background-color: #ff0000;
+        border: red;
+    }
+    
+    .btn2 {
+        position: absolute;
+        left: 560px;
+    }
+    
+    .typingbox {
+        position: relative;
+        --fontColor: var(--black);
+    }
+    
+    .headerH1 {
+        line-height: 100px;
+    }
+    
+    #sentence {
+        position: relative;
+        --fontColor: var(--black);
+    }
+    
+    #displatmsg {
+        position: absolute;
+        top: 300px
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }

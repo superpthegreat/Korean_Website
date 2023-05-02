@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Korean Typing Game</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <body class="light-theme">
+        <h1>Task List</h1>
+        <p id="msg">Current tasks:</p>
+        <ul>
+            <li class="list">Add visual styles=done</li>
+            <li class="list">Add light and dark themes=done</li>
+            <li>Enable switching the theme=done</li>
+            <li>Korean Typing Game=done</li>
+            <li>Adding to database feature=done</li>
+            <li>Make the website look proper=not done</li>
+        </ul>
+        <div>
+            <button class="btn">Dark</button>
+        </div>
+        <h1 style="text-align:center;">Typing Game</h1>
+        <p id="displaymsg">Practice typing in Korean! Click to Start to begin!</p>
+        <p id="sentence"></p> <!--this is how you quote. Also this where we display our sentence-->
+        <p id ="message"></p> <!--where we display any status msg-->
+        <div>
+            <input class="typingbox" type="text" aria-label="current word" id="typed-value"/> <!--textbox-->
+            <button class="btn2" type="button" id="start">Start</button> <!--Start Button-->
+        </div>
+        <div class="headerH1">
+        <h1 style="text-align:center;">Add More Sentences</h1>
+        </div>
+        <form action="action.php" method="post">
+            <label for="korsen">New Sentence:</label><br>
+            <input type="text" id="korsen" name="korsen"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script src="app.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+
+    </body>
+</html>
